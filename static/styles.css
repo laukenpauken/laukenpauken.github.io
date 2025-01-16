@@ -4,6 +4,7 @@ body {
     background-color: #FFFDF6;
     font-family: 'Inter', sans-serif;
     line-height: 1.5;
+    caret-color: transparent;
 }
 
 main {
