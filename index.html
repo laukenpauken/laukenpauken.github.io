@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <main>
+        <div class="containers-wrapper">
+            <div class="hero-container">
+                <div class="hero-image">
+                    <img src="static/images/profile.png" alt="Lauk Rashed">
+                </div>
+                <div class="hero-text">
+                    <div class="hero-title">
+                        <h2>Lauk Rashed</h2>
+                    </div>
+                    <div class="hero-description">
+                        <p>Hello, Hej & Choni!</p>
+
+                        <p>Whether it's experimenting with new ideas, tackling random challenges, or just following my
+                            curiosity,
+                            this portfolio is a collection of what I enjoy creating in my free time.</p>
+                    </div>
+                    <div class="social-links">
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/lauk-rashed/" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <!-- CV Download -->
+                        <a href="static/files/cv.pdf" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-file-alt"></i>
+                        </a>
+                        <!-- Email -->
+                        <a href="mailto:laukrashed@gmail.com" rel="noopener noreferrer">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                        <!-- Soundcloud -->
+                        <a href="https://soundcloud.com/lauki-r" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-soundcloud"></i>
+                        </a>
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="row" id="forseningskollen">
+                <div class="project-image">
+                    <img src="static/images/forseningskollen.png" alt="Förseningskollen Preview">
+                </div>
+                <div class="project-content">
+                    <h2>Förseningskollen.se</h2>
+                    <p>A web application that tracks delayed & canceled trains between Uppsala and Stockholm, built with
+                        Python, Flask, SQLite, JavaScript, HTML/CSS.</p>
+
+                    <p>This project started as a Python script using Trafikverket's API (REST) to collect and process
+                        train data. I later implemented OOP principles to structure data handling efficiently and only
+                        return late/canceled trains. To store and display the data, I built a full-stack solution using
+                        only vanilla HTML/CSS/JavaScript.</p>
+
+                    <p>For automation, I designed a CI/CD pipeline using GitHub Actions to fetch new data daily, append
+                        it to a Render-hosted database, and deploy the updated site to Cloudflare. What I did not know
+                        was that the free tier on Render removed the database once the data was uploaded and I spent
+                        many hours debugging why my database only had the previous days data. Therefore you can
+                        currently only access the previous days data.</p>
+
+                    <p>I am currently working on hosting a database locally on a Raspberry Pi to learn more about
+                        utilizing the device. Before proceeding, I am taking the time to read about and understand the
+                        risks associated with hosting a database on a local network.</p>
+
+                    <a href="https://www.forseningskollen.se" class="demo-button">Live Demo</a>
+                </div>
+            </div>
+
+            <div class="row" id="Tamata">
+                <div class="project-image">
+                    <img src="static/images/tamata.png" alt="Tamata Preview">
+                </div>
+                <div class="project-content">
+                    <h2>Tamata</h2>
+                    <p>A puzzle game inspired by the classic Game Boy title Kwirk, built with Python's PyGame.</p>
+
+                    <p>The project started during Christmas at my parents house to experiment a bit with PyGame, chosen
+                        for its hands-on approach
+                        requiring manual implementation of movement, collision detection, and game mechanics. I designed
+                        the game structure using the Game Loop, Command, and Observer design patterns. While the game
+                        currently features only one level, the focus has currently been on robust design and clean
+                        project structure rather than content.</p>
+
+                    <p>I am currently working on composing the main theme, sound effects and creating some more sprites
+                        for future levels. This project serves mainly as a creative outlet rather than aiming for a
+                        release.</p>
+
+                    <a href="static/images/tamataDemo.gif" class="demo-button">Demo</a>
+                </div>
+            </div>
+
+            <div class="row" id="test">
+                <div class="project-image">
+                    <img src="static/images/soundboard.png" alt="test">
+                </div>
+                <div class="project-content">
+                    <h2>Dungeons & Dragons Soundboard</h2>
+                    <p>As an avid Dungeons & Dragons player, I created this soundboard to help my Dungeon Master solve a
+                        challenge he faced during our sessions. Managing multiple YouTube tabs for background music and
+                        ambience was cumbersome and disrupted the flow of the game.</p>
+
+                    <p>I created a simple virtual soundboard that allows the user to assign YouTube links to tiles in a
+                        grid-based interface. By pressing a tile, the sound plays instantly, making it easier to switch
+                        between tracks and amplify the game atmosphere.</p>
+
+                    <p>The application is lightweight and runs locally in a web browser, using HTML, CSS, JavaScript,
+                        and Flask.</p>
+
+                    <a href="https://github.com/laukenpauken/soundboard" class="demo-button">Source Code</a>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
